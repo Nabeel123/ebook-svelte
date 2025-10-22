@@ -1,10 +1,22 @@
+<script>
+  import authorImage from "$assets/profile_pic.jpg";
+  
+</script>
+
+<section class="landing-page-section">
+<h2 class="mb-l">About the author</h2>
+<div class="author-container">
+  <div class="author-text">
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi adipisci incidunt maiores neque, distinctio iure excepturi? Blanditiis saepe animi, esse asperiores nostrum velit hic ipsa laboriosam dignissimos obcaecati earum accusantium.
+    </p>
+  </div>
+  <img src={authorImage} alt="Nabeel Francis Author" />
+</div>
+</section>
+
 <style>
-  .author-section {
-    padding: 80px 0;
-    margin-left: 12vw;
-    margin-right: 20vw;
-    max-width: 1150px;
-  }
+
   .author-container {
     display: flex;
     justify-content: space-between;
