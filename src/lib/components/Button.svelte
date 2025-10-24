@@ -1,8 +1,27 @@
 <script>
 let {children, ...props} = $props();
+import {loadStripe} from '@stripe/stripe-js'
+import {PUBLIC_STRIPE_KEY} from '$env/static/public';
+import {goto} from '$app/navigation';
+
+async function onClick() {
+  const stripe = await loadStripe(PUBLIC_STRIPE_KEY);
+try {
+   const response = await fetch("/api/checkout", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    }
+    })
+    const {sessionID} = await response.json();
+    await stripe.redirectToCheckout({sessionID}); 
+} catch (error) {
+  goto("/checkout/failure")
+}
+}
 </script>
 
-<button {...props}>{@render children()}</button>
+<button {...props} {onClick}>{@render children()}</button>
 <style>
   button {
     background-color: black;
