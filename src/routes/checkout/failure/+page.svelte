@@ -1,6 +1,6 @@
 <script>
 import {HeroSection} from "$components";
-  import Button from "$components/Button";
+import Button from "./Button.svelte";
 </script>
 <HeroSection>
 <h1>Error While</h1>
