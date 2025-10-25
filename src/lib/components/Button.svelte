@@ -1,27 +1,47 @@
 <script>
-let {children, ...props} = $props();
 import {loadStripe} from '@stripe/stripe-js'
 import {PUBLIC_STRIPE_KEY} from '$env/static/public';
 import {goto} from '$app/navigation';
 
-async function onclick() {
-  const stripe = await loadStripe(PUBLIC_STRIPE_KEY);
-try {
-   const response = await fetch("/api/checkout", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
+let {children} = $props();
+
+async function handleClick() {
+  try {
+    // Initialize Stripe
+    const stripe = await loadStripe(PUBLIC_STRIPE_KEY);
+    if (!stripe) {
+      throw new Error('Failed to initialize Stripe');
     }
-    })
-    const {sessionID} = await response.json();
-    await stripe.redirectToCheckout({sessionID}); 
-} catch (error) {
-  goto("/checkout/failure")
-}
+
+    // Make the API call
+    const response = await fetch("/api/checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
+    
+    // Parse the response
+    const data = await response.json();
+    
+    if (!response.ok) {
+      throw new Error(data.error || 'Failed to create checkout session');
+    }
+    
+    if (!data.url) {
+      throw new Error('No checkout URL received');
+    }
+
+    // Redirect to checkout
+    window.location.href = data.url;
+  } catch (error) {
+    console.error('Payment error:', error);
+    goto("/checkout/failure");
+  }
 }
 </script>
 
-<button {...props} {onclick}>{@render children()}</button>
+<button onclick={handleClick}>{@render children()}</button>
 <style>
   button {
     background-color: black;
