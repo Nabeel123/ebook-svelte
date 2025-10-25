@@ -4,7 +4,7 @@ import {loadStripe} from '@stripe/stripe-js'
 import {PUBLIC_STRIPE_KEY} from '$env/static/public';
 import {goto} from '$app/navigation';
 
-async function onClick() {
+async function onclick() {
   const stripe = await loadStripe(PUBLIC_STRIPE_KEY);
 try {
    const response = await fetch("/api/checkout", {
@@ -21,7 +21,7 @@ try {
 }
 </script>
 
-<button {...props} {onClick}>{@render children()}</button>
+<button {...props} {onclick}>{@render children()}</button>
 <style>
   button {
     background-color: black;
