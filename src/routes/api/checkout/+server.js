@@ -18,8 +18,8 @@ export async function POST() {
           price_data: {
             currency: "usd",
             product_data: {
-              name: "Move to Spain E-book",
-              description: "Comprehensive guide for moving to Spain",
+              name: "Move to Sweden E-book",
+              description: "Comprehensive guide for moving to Sweden",
             },
             unit_amount: 1000, // $10.00 in cents
           },

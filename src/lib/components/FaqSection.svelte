@@ -1,6 +1,5 @@
 <script>
     import { FaqItem, Button } from "$components";
-    import twitterIcon from "$assets/icons/twitter.webp";
 
     const faqs = [
         {
@@ -47,16 +46,6 @@
         {#each faqs as faq, index}
             <FaqItem {faq} isExpanded = { index === questionCurrentlyExpanded} onclick={() => onclick(index)} />
         {/each}
-    </div>
-    <div class="additional-info mt-m">
-        <Button class="mt-s">BUY NOW</Button>
-        <p class="mt-m">Any other question?</p>
-        <a href="https://www.linkedin.com/in/nabeel-francis/">
-            <p>
-                Hit me up on twitter
-                <img src={twitterIcon} class="twitter-icon" alt="" />
-            </p>
-        </a>
     </div>
 </section>
 

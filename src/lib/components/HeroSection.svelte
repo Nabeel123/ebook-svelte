@@ -12,7 +12,6 @@
         <h4 class="italic semi-bold">
             Your comprehensive guide to Swedish relocation.
         </h4>
-        <img class="book-cover" src={bookCover} alt="" />
         <img class="phone-cover" src={phoneCover} alt="" />
     </div>
     <div class="hero-text white text-center">
@@ -110,9 +109,16 @@
         object-fit: contain;
     }
     
+    .author-bio {
+        font-style: italic;
+        max-width: 540px;
+        margin: 0 auto;
+        font-size: 0.95em;
+    }
+
     .purchase-btn {
-  margin-top: 35px;
-}
+        margin-top: 35px;
+    }
 
     /* Tablet and smaller */
     @media (max-width: 1024px) {
