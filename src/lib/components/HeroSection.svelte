@@ -8,9 +8,9 @@
 <section class="hero">
     <div class="hero-showcase text-center bold">
         <h1 class="purple">MOVE TO</h1>
-        <h1 class="purple mb-xs">SPAIN</h1>
+        <h1 class="purple mb-xs">SWEDEN</h1>
         <h4 class="italic semi-bold">
-            There's no need to make the same mistakes I made.
+            Your comprehensive guide to Swedish relocation.
         </h4>
         <img class="book-cover" src={bookCover} alt="" />
         <img class="phone-cover" src={phoneCover} alt="" />
@@ -25,10 +25,9 @@
         <h1>SAVE YOU MONEY</h1>
         <h1 class="mb-m">TIME & NERVES</h1>
         <p class="light-grey mb-l">
-            I moved to Spain seven years ago. The process was painful and difficult. I
-            learned most things the hard way; finding a job, getting a visa,
-            calculating my cost of living, choosing an appartment. That's why I wrote
-            this e-book, to tell you how I did it. No bullshit, no stress.
+            Moving to Sweden is a life-changing decision that requires careful planning. This comprehensive guide 
+            covers everything from visa applications to finding employment, understanding the Swedish system, 
+            and integrating into the local culture. Learn from real experiences and make your transition smooth and successful.
         </p>
         <div class="purchase-btn">
             <Button>Purchase E-book for $10</Button>

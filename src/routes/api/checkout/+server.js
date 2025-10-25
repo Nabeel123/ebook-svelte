@@ -6,10 +6,6 @@ import { PUBLIC_FRONTEND_URL } from "$env/static/public";
 const stripe = new Stripe(STRIPE_API_KEY);
 export async function POST() {
   try {
-    // Log environment variables (excluding sensitive data)
-    console.log("Frontend URL:", PUBLIC_FRONTEND_URL);
-    console.log("Stripe API Key exists:", !!STRIPE_API_KEY);
-
     if (!STRIPE_API_KEY) {
       throw new Error("Stripe API key is not configured");
     }

@@ -6,22 +6,22 @@
         {
             question: "What will I learn from this ebook?",
             answer:
-            "This ebook provides a comprehensive guide to relocating to Spain, covering everything from securing the right visa and navigating Spain's legal system to finding the perfect place to live and integrating into the local culture. Whether you're moving for work, study, or retirement, this guide equips you with the essential knowledge and practical steps to make your transition as smooth as possible.",
+            "This ebook provides a comprehensive guide to relocating to Sweden, covering essential topics like obtaining the right visa, understanding the Swedish social system, finding employment, securing housing, learning the language, and integrating into Swedish culture. You'll learn about healthcare, education, banking, taxes, and daily life in Sweden, along with practical tips for a successful transition.",
         },
         {
             question: "Who is this ebook for?",
             answer:
-            "This ebook is perfect for anyone considering a move to Spain, whether you're planning a short-term stay or a permanent relocation. It's designed for expats, retirees, students, and professionals who want to avoid common pitfalls and streamline their move. If you're looking for a detailed, step-by-step guide to help you every step of the way, this ebook is for you.",
+            "This ebook is ideal for anyone planning to move to Sweden - whether you're a professional seeking work opportunities, a student pursuing education, or someone joining family in Sweden. It's particularly valuable for non-EU citizens who need to navigate the immigration process, but also contains essential information for EU citizens moving to Sweden.",
         },
         {
             question: "How much does the ebook cost?",
             answer:
-            "The ebook is priced at $10. This one-time purchase grants you immediate access to all the content, including detailed chapters, actionable checklists, and valuable resources that will save you time, money, and stress during your move to Spain.",
+            "The ebook is priced at $10. This one-time purchase gives you instant access to comprehensive information about moving to Sweden, including detailed chapters on immigration procedures, housing guides, employment resources, and cultural insights that will help you save time and avoid costly mistakes in your relocation process.",
         },
         {
             question: "Is the information in the ebook up-to-date?",
             answer:
-            "Yes, the ebook is regularly updated to reflect the latest changes in Spanish immigration laws, visa requirements, and other relevant information. The author, John Smith, stays on top of these updates to ensure that you're receiving the most accurate and current guidance available.",
+            "Yes, the ebook is regularly updated to reflect the latest changes in Swedish immigration policies, housing market trends, and social system requirements. We maintain close contact with Swedish authorities and expat communities to ensure all information is current and accurate.",
         },
         {
             question: "Can I get a refund if I'm not satisfied?",
